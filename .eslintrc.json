@@ -1,26 +1,39 @@
-function getUsername() {
-    // allow the user to input their name
-    var username = window.prompt("What's your username? 😎")
-    // check to see if a username is steve
-    if(username === '') {
-      document.write('Enter your username')
-    } else {
-      document.write(`<h1>Hey ${username}</h1>`)
-    }
-    // if username is steve print out hey steve welcome back
-    // if not print out you need to sign up 
-  }
-  // 
-  function getImageCount() {
-    // get number from user
-    let pictureCount = window.prompt('How many pictures do you want?')
-    // first check to see if what they gave me is a number
-    if(isNaN(pictureCount) === false) {
-      document.write(`<h1>${pictureCount}</h1>`)
-      for(var i = 0; i < pictureCount; i++) {
-        document.write('<img src="https://static01.nyt.com/images/2021/01/22/world/21xp-sanders-meme/21xp-sanders-meme-superJumbo-v4.jpg" alt="bernie" />')
-        }
-      } else {
-        pictureCount = window.prompt('use a number please')
+{
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "ecmaFeatures": {
+        "impliedStrict": true
       }
+    },
+    "env": {
+      "browser": true,
+      "es6": true
+    },
+    "rules": {
+      "no-var": "error",
+      "eqeqeq": ["error", "always"],
+      "no-console": "off",
+      "no-undefined": "off",
+      "indent": ["error", 2],
+      "quotes": ["warn", "single"],
+      "no-multi-spaces": [
+        "warn",
+        {
+          "exceptions": {
+            "VariableDeclarator": true
+          }
+        }
+      ],
+      "no-trailing-spaces": "warn",
+      "new-cap": "warn",
+      "no-redeclare": [
+        "error",
+        {
+          "builtinGlobals": true
+        }
+      ],
+      "semi": [2, "always"],
+      "eol-last": "error"
     }
+  }
