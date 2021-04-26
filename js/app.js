@@ -119,10 +119,4 @@ function main() {
   saraState();
   saraYear();
 alert(`The answer is ${rightAnswer}`);
-<<<<<<< HEAD
 alert('Your final score: ' + points + ' points!')
-=======
-alert('Your final score: ' + points + ' points!')
-}
-main();
->>>>>>> a0fdfd8eae991cb258b850f7a6d233ae6c963afb
