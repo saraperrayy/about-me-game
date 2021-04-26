@@ -96,4 +96,3 @@ while (i < 6) {
 // display the correct answers to the user
 alert(`The answer is ${rightAnswer}`);
 alert('Your final score: ' + points + ' points!')
-
