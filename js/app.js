@@ -19,8 +19,9 @@ if (answer1 === true) {
   /*console.log('See you again soon.')*/
   alert('See you again soon.')
 }
-// add point system
 let points = 0;
+// adding functions for questions
+function saraSchool() {
 let school = prompt('Did Sara go to Middle Tennessee State University?')
 // convert the variable color to lower case to evaluate it
 if (school.toLowerCase() === 'yes') {
@@ -31,6 +32,9 @@ if (school.toLowerCase() === 'yes') {
     alert('Sorry, Sara is a True Blue alum')
     alert('Total points: ' + points)
   }
+}
+
+  function saraYear() {
   let schoolyear = prompt('Did she graduate from MTSU in 2018 or 2020?')
   if (schoolyear.toLowerCase() === '2020') {
   alert(' Correct! Sara just graduated with a Bachelors of Science degree in Journalism!')
@@ -39,7 +43,10 @@ if (school.toLowerCase() === 'yes') {
   } else {
       alert('Sorry, you missed the question!')
       alert('Total points: ' + points)
-  }  
+  } 
+}
+
+function saraState() {
 let state = prompt('Does Sara live in Tennessee or California?')
     if (state.toLowerCase() === 'tennessee') {
     alert('Correct! Sara lives in the Volunteer State!')
@@ -49,6 +56,8 @@ let state = prompt('Does Sara live in Tennessee or California?')
       alert('That is incorrect, maybe one day!')
       alert('Total points: ' + points)
     }
+  }
+  function saraJob() {
 let job = prompt('Did she work for a pharmacy?')
     if (job.toLowerCase() === 'yes') {
     alert(' Correct!')
@@ -58,6 +67,8 @@ let job = prompt('Did she work for a pharmacy?')
         alert('Sorry — maybe you\'ll get the next one right!')
         alert('Total points: ' + points)
     }
+  }
+  function saraBusiness() {
 let business = prompt('What year did she start Gemini Design Studio?')
     if (business.toLowerCase() === '2021') {
     points++;
@@ -66,6 +77,8 @@ let business = prompt('What year did she start Gemini Design Studio?')
         alert('Sorry, friend — that\'s incorrect.')
         alert('Total points: ' + points)
     }
+  }
+  function saraNetwork() {
 let network = prompt('Did she work for Women In The Lead?')
     if (network.toLowerCase() === 'no') {
     alert(' Great work! You are correct!')
@@ -75,7 +88,9 @@ let network = prompt('Did she work for Women In The Lead?')
         alert('Sorry! That was a trick question. Sara was only a professional member of this organization.')
         alert('Total points: ' + points)
     }
+  }
 // multiple choice question using an array
+function saraDog() {
 let answer2 = prompt('What is my favorite kind of dog? Options: Labradoodle, Frenchie, Pug, Samoyed, Xolo, Great Pyrenese')
 let dog = ['Labradoodle, Frenchie, Pug, Samoyed, Xolo, Great Pyrenese'];
 let rightAnswer = 'frenchie';
@@ -92,7 +107,22 @@ while (i < 6) {
     break;
   }
   i++;
+  }
 }
 // display the correct answers to the user
+function main() {
+  saraBusiness();
+  saraDog();
+  saraJob();
+  saraNetwork();
+  saraSchool();
+  saraState();
+  saraYear();
 alert(`The answer is ${rightAnswer}`);
+<<<<<<< HEAD
 alert('Your final score: ' + points + ' points!')
+=======
+alert('Your final score: ' + points + ' points!')
+}
+main();
+>>>>>>> a0fdfd8eae991cb258b850f7a6d233ae6c963afb
